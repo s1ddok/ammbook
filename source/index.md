@@ -39,6 +39,10 @@ import kittn
 
 api = kittn.authorize('meowmeowmeow')
 ```
+More math:
+$$x+1\over\sqrt{1-x^2}$$
+This would show up in the left pane only for python
+{: .left .python}
 
 ```shell
 # With shell, you can just pass the correct header with each request
@@ -165,4 +169,3 @@ This endpoint retrieves a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
-

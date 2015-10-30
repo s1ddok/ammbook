@@ -28,6 +28,18 @@ under the License.
 
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+      MathJax.InputJax.TeX.Definitions.Add({
+        macros: {
+          setCounter: "setCounter"
+        }
+      }, null, true);
+      MathJax.InputJax.TeX.Parse.Augment({
+        setCounter: function(name) {
+          var num =  parseInt(this.GetArgument(name));
+          MathJax.Extension["TeX/AMSmath"].number = num;
+        }
+      });
+
     </script>
     <%= stylesheet_link_tag :screen, media: :screen %>
     <%= stylesheet_link_tag :print, media: :print %>

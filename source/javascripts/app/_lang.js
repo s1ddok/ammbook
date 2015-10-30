@@ -17,6 +17,10 @@ under the License.
   'use strict';
 
   var languages = [];
+  var correspondingClasses = {
+    "Пример1" : "example1",
+    "Пример2" : "example2",
+  };
 
   global.setupLanguages = setupLanguages;
   global.activateLanguage = activateLanguage;
@@ -29,8 +33,10 @@ under the License.
     $(".lang-selector a[data-language-name='" + language + "']").addClass('active');
     for (var i=0; i < languages.length; i++) {
       $(".highlight." + languages[i]).hide();
+      $(".right." + correspondingClasses[languages[i]]).hide();
     }
     $(".highlight." + language).show();
+    $(".right." + correspondingClasses[language]).show();
 
     global.toc.calculateHeights();
 

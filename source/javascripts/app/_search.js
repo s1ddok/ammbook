@@ -1,5 +1,8 @@
 //= require ../lib/_lunr
+//= require ../lib/_lunr.stemmer.support
+//= require ../lib/_lunrru
 //= require ../lib/_jquery.highlight
+
 (function () {
   'use strict';
 
@@ -7,11 +10,13 @@
   var highlightOpts = { element: 'span', className: 'search-highlight' };
 
   var index = new lunr.Index();
-
+  //index.use(lunr.ru);
   index.ref('id');
   index.field('title', { boost: 10 });
   index.field('body');
   index.pipeline.add(lunr.trimmer, lunr.stopWordFilter);
+
+  lunr.ru.call(index);
 
   $(populate);
   $(bind);

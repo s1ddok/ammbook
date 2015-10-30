@@ -18,7 +18,7 @@ search: true
 
 # Жорданова форма
 
-<p class="right example1">
+<p class="right example1" markdown="1">
 1. Пусть характеристический многочлен матрицы $$A_\epsilon$$ имеет вид
 
 $$\phi(\lambda)=(-1)^3(\lambda-\lambda_1)(\lambda-\lambda_2)(\lambda-\lambda_3),$$

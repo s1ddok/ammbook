@@ -61,7 +61,7 @@
         highlight.call(this);
       } else {
         searchResults.html('<li></li>');
-        $('.search-results li').text('No Results Found for "' + this.value + '"');
+        $('.search-results li').text('Нет совпадений с "' + this.value + '"');
       }
     } else {
       unhighlight();

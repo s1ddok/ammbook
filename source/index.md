@@ -16,6 +16,7 @@ toc_footers:
 includes:
   - introduction
   - errors
+  - demo
   - jordanova_forma
 
 search: true

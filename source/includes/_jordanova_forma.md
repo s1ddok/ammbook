@@ -1,10 +1,10 @@
 # Жорданова форма
 
-$$\setCounter{0}$$
 <div class="right example1" markdown="1">
 **Пример: Найти жорданову форму и жорданов базис матрицы оператора**
 
-$$A_f=\left(\
+$$\setCounter{0}
+A_f=\left(\
 \begin{array}{lll}
 0 & 1 & 0\\
 0 & \lambda_1 & 0\\
@@ -208,7 +208,7 @@ a_{k1} & a_{k2} & ... & a_{kk} &  a_{k,k+1} & ... & a_{kn}\\
 0 & \lambda_1 & 0\\
 0 & 0 & \lambda_2
 \end{array}
-\right)\$$</p>
+\right)$$</p>
 
 
 2\.$$rang(A_\epsilon-\lambda_1I)=2$$, поэтому $$k_1=3-rang(A_\epsilon-\lambda_1I)=1$$ и, следовательно, жорданова форма содержит одну жорданову клетку с собственным значением   $$\lambda_1$$:

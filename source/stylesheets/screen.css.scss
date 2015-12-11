@@ -563,6 +563,38 @@ html, body {
   }
 }
 
+#expand-collapse-code {
+  height: 40px;
+  position: fixed;
+  width: 40px;
+  left: calc(50% + 138px);
+  z-index: 1000;
+
+  .showHideButton {
+    position: absolute;
+    margin: 0;
+    right: -12px;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    z-index: 9999998;
+  }
+
+  #hideCodeButton {
+    background: url("../images/code_collapse_icon.png");
+  }
+
+  #showCodeButton {
+    display: none;
+    right: 40px;
+    background: url("../images/code_expand_icon.png");
+  }
+
+  &.hide-code-column {
+    left: calc(100% - 38px);
+  }
+}
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////

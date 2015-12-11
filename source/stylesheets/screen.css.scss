@@ -567,28 +567,38 @@ html, body {
   height: 40px;
   position: fixed;
   width: 40px;
-  left: calc(50% + 138px);
+  left: calc(50% + 48px);
   z-index: 1000;
+
+  button {
+    border: none;
+  }
 
   .showHideButton {
     position: absolute;
     margin: 0;
-    right: -12px;
+    right: 12px;
     padding: 0;
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     top: 50%;
     z-index: 9999998;
   }
 
   #hideCodeButton {
-    background: url("../images/code_collapse_icon.png");
+    background-size: contain;
+    background-position: center;
+    background-color: Transparent;
+    background-image: url("../images/code_icon.png");
   }
 
   #showCodeButton {
     display: none;
     right: 40px;
-    background: url("../images/code_expand_icon.png");
+    background-size: contain;
+    background-position: center;
+    background-color: Transparent;
+    background-image: url("../images/code_icon2.png");
   }
 
   &.hide-code-column {
@@ -631,6 +641,9 @@ html, body {
 
   %left-col {
     margin-right: 0;
+    .content {
+      margin-right: 0;
+    }
   }
 
   .tocify-wrapper .lang-selector {
@@ -648,5 +661,9 @@ html, body {
 
   %right-col + %left-col {
     margin-top: $main-padding;
+  }
+
+  #expand-collapse-code {
+    display: none;
   }
 }

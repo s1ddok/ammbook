@@ -3,6 +3,7 @@ $(document).ready(function() {
     var hash = window.location.hash;
     $('pre').hide();
     $('blockquote').hide();
+    $('.right').hide();
     $('.dark-box').css('width', '20px');
     $('#hideCodeButton').hide();
     $('#showCodeButton').show();
@@ -22,6 +23,7 @@ $(document).ready(function() {
     var hash = window.location.hash;
     $('pre').show();
     $('blockquote').show();
+    $('.right').show();
     $('.dark-box').css('width', '50%');
     $('#hideCodeButton').show();
     $('#showCodeButton').hide();

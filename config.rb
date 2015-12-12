@@ -9,6 +9,8 @@ set :markdown,
     with_toc_data: true,
     no_intra_emphasis: true
 
+set :markdown, :transliterated_header_ids => true, :hard_wrap => true
+
 # Assets
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'

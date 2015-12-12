@@ -42,4 +42,11 @@ $(document).ready(function() {
   $('#hideCodeButton').click(hideCode);
   $('#showCodeButton').click(showCode);
 
+  $(".proof-expand").click(function () {
+     $(this).next().slideToggle();
+  });
+
+  $(".proof").each(function() {
+    $(this).slideUp();
+  });
 });

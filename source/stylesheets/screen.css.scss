@@ -335,7 +335,8 @@ html, body {
     clear: both;
   }
 
-  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl, &>.MathJax_Display {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl,
+   &>.MathJax_Display, &>.proof, &>.proof-expand {
     margin-right: $examples-width;
     padding: 0 $main-padding;
     box-sizing: border-box;
@@ -350,7 +351,7 @@ html, body {
   }
 
   // the div is the tocify hidden div for placeholding stuff
-  &>h1, &>h2, &>div {
+  &>h1, &>h2, &>div#toc {
     clear:both;
   }
 
@@ -605,6 +606,16 @@ html, body {
     left: calc(100% - 38px);
   }
 }
+
+.proof-expand:hover {
+    background: #CEE1FF;
+}
+
+.proof-expand {
+  background: #AEC6EC;
+  font-size: 130%;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////

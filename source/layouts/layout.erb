@@ -27,7 +27,14 @@ under the License.
     </script>
 
     <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: {autoNumber: "all"} },
+        jax: ["input/TeX","output/HTML-CSS"],
+        "HTML-CSS": {
+          extensions: ["handle-floats.js"],
+          linebreaks: { automatic: true } 
+        }
+      });
       MathJax.InputJax.TeX.Definitions.Add({
         macros: {
           setCounter: "setCounter"
